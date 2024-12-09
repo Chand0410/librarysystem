@@ -1,4 +1,4 @@
-package com.library.model;
+package com.library;
 
 public class Book {
     private int id;
@@ -6,6 +6,9 @@ public class Book {
     private String author;
     private String category;
     private boolean isIssued;
+
+    public Book() {
+    }
 
     public Book(int id, String title, String author, String category) {
         this.id = id;
@@ -15,7 +18,6 @@ public class Book {
         this.isIssued = false;
     }
 
-    // Getters and setters
     public int getId() {
         return id;
     }
@@ -34,6 +36,22 @@ public class Book {
 
     public boolean isIssued() {
         return isIssued;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public void setIssued(boolean issued) {
